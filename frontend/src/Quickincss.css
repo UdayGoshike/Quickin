@@ -1,0 +1,59 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-hover:hover {
+  background-color: #7c3aed;
+  color: white;
+  transform: translateX(4px);
+}
+
+.card-hover:hover p {
+  color: #ede9fe;
+}
+
+.transition-custom {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tagline-h1 {
+  line-height: 1.1;
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nexus-gradient {
+  background: linear-gradient(135deg, #751fe7 0%, #b58bff 100%);
+}
+
+.glass-panel {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
+  
