@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 
 const categoryTitles = {
   entertainment: "Entertainment",
-  geopolitics: "Geopolitics",
+  health: "Health",
   science: "Science",
   sports: "Sports",
-  others: "Others",
+  business: "Business",
 };
 
 export default function CategoryPage() {

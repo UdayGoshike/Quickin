@@ -12,10 +12,10 @@ const categories = [
     slug: "entertainment",
   },
   {
-    title: "Geopolitics",
-    subtitle: "Global Relations & Economy",
-    emoji: "🌍",
-    slug: "geopolitics",
+    title: "Health",
+    subtitle: "Medicine, Wellness & Research",
+    emoji: "🩺",
+    slug: "health",
   },
   {
     title: "Science",
@@ -30,10 +30,10 @@ const categories = [
     slug: "sports",
   },
   {
-    title: "Others",
-    subtitle: "Explore more categories",
-    emoji: "⋯",
-    slug: "others",
+    title: "Business",
+    subtitle: "Markets, Startups & Economy",
+    emoji: "💼",
+    slug: "business",
   },
 ];
 
@@ -53,7 +53,6 @@ function CategoryCard({ item, onClick }) {
       <div className="flex items-center gap-2">
         <span className="text-xl">{item.emoji}</span>
         <span className="material-symbols-outlined text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-         
         </span>
       </div>
     </button>
@@ -92,7 +91,7 @@ export default function Quickin() {
             </h1>
 
             <p className="mt-6 max-w-md text-lg text-slate-600">
-              Curated insights across technology, global affairs, and culture.
+              Curated insights across technology, health, business, and culture.
               Stay ahead with Quickin.
             </p>
           </div>
