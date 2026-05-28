@@ -30,7 +30,7 @@ export default function CategoryPage() {
         setError("");
 
         const res = await fetch(
-          `/api/webhook/6b656bdb-9b09-443c-9b36-ed08ccf3f38b/news/${categoryName}?t=${Date.now()}`
+          `https://n8n-production-5040.up.railway.app/webhook/6b656bdb-9b09-443c-9b36-ed08ccf3f38b/news/${categoryName}?t=${Date.now()}`
         );
 
         const text = await res.text();
