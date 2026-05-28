@@ -3,6 +3,7 @@ import "./App.css";
 import "./Quickincss.css";
 import quickinLogo from "./assets/quickin-logo.png";
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
 
 const categories = [
   {
@@ -41,11 +42,11 @@ function CategoryCard({ item, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="group flex w-full cursor-pointer items-center justify-between rounded-[8px] border border-slate-100 bg-white p-5 text-left shadow-sm transition-all duration-300 hover:translate-x-1 hover:bg-[#7c3aed] hover:text-white"
+      className="group flex w-full cursor-pointer items-center justify-between rounded-[18px] border border-white/10 bg-[#e8e6eb] p-5 text-left shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#f3f1f6]"
     >
       <div>
         <h3 className="text-lg font-bold">{item.title}</h3>
-        <p className="text-xs text-slate-500 transition-colors duration-300 group-hover:text-[#ede9fe]">
+        <p className="text-xs text-slate-800 transition-colors duration-300 g ">
           {item.subtitle}
         </p>
       </div>
@@ -63,14 +64,8 @@ export default function Quickin() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-white text-slate-800">
-      <header className="mx-auto flex w-full max-w-7xl items-center px-0 py-0">
-        <img
-          src={quickinLogo}
-          alt="Quickin logo"
-          className="h-20 w-auto object-contain"
-        />
-      </header>
+    <div className="min-h-screen bg-[#111111] pt-28 text-slate-800">
+      <Header />
 
       <main className="mx-auto w-full max-w-[1100px] px-6 pb-12">
         <section className="grid grid-cols-1 items-center gap-12 py-8 lg:grid-cols-2">
@@ -84,9 +79,9 @@ export default function Quickin() {
                 fontSize: "clamp(3rem, 5vw, 6.5rem)",
               }}
             >
-              The more you <br />
+              <span className="text-[#f4effa]"> The more you </span> <br />
               <span className="italic text-[#7c3aed]">Explore,</span> <br />
-              the more you <br />
+              <span className="text-[#f4effa]">the more you </span><br />
               <span className="italic text-[#7c3aed]">Discover</span>
             </h1>
 
