@@ -79,7 +79,7 @@ export default function CategoryPage() {
         <div className="mx-auto flex w-full max-w-[1500px] items-center justify-center gap-2">
           <button
             onClick={handlePrev}
-            className="group hidden h-14 w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white shadow-[0_20px_50px_-12px_rgba(117,31,231,0.12)] transition-all duration-300 hover:bg-[#751fe7] active:scale-90 md:flex md:items-center md:justify-center"
+            className="group flex h-12 w-12 md:h-14 md:w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
           >
             <span className="text-3xl leading-none text-[#751fe7] transition-colors duration-300 group-hover:text-white">
               ‹
@@ -175,7 +175,7 @@ export default function CategoryPage() {
 
           <button
             onClick={handleNext}
-            className="group hidden h-14 w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white shadow-[0_20px_50px_-12px_rgba(117,31,231,0.12)] transition-all duration-300 hover:bg-[#751fe7] active:scale-90 md:flex md:items-center md:justify-center"
+            className="group flex h-12 w-12 md:h-14 md:w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
           >
             <span className="text-3xl leading-none text-[#751fe7] transition-colors duration-300 group-hover:text-white">
               ›

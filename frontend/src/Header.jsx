@@ -6,15 +6,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-5 left-1/2 z-50 -translate-x-1/2">
-      <div className="flex items-center rounded-full border border-white/30 bg-white/70 px-40 py-3 shadow-[0_8px_30px_rgba(124,58,237,0.18)] backdrop-blur-xl">
-        <div className="-ml-0">
-          <img
-            src={quickinLogo}
-            alt="Quickin logo"
-            className="h-14 scale-180 w-auto cursor-pointer object-contain mix-blend-multiply"
-            onClick={() => navigate("/")}
-          />
-        </div>
+      <div className="flex items-center justify-center w-[60vw] max-w-[400px] rounded-full border border-white/30 bg-violet-200 py-0">
+        <img
+          src={quickinLogo}
+          alt="Quickin logo"
+          className="h-16 lg:h-20 w-auto scale-125 lg:scale-150 cursor-pointer object-contain"
+          onClick={() => navigate("/")}
+        />
       </div>
     </header>
   );
