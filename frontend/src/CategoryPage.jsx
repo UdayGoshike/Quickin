@@ -76,10 +76,10 @@ export default function CategoryPage() {
 
 
       <main className="w-full px-1 pb-4 pt-28 md:px-3 md:pb-6 md:pt-32">
-        <div className="mx-auto flex w-full max-w-[1500px] items-center justify-center gap-2">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col md:flex-row items-center justify-center gap-2">
           <button
             onClick={handlePrev}
-            className="group flex h-12 w-12 md:h-14 md:w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
+            className="group hidden md:flex h-14 w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
           >
             <span className="text-3xl leading-none text-[#751fe7] transition-colors duration-300 group-hover:text-white">
               ‹
@@ -175,11 +175,26 @@ export default function CategoryPage() {
 
           <button
             onClick={handleNext}
-            className="group flex h-12 w-12 md:h-14 md:w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
+            className="group hidden md:flex h-14 w-14 shrink-0 self-center rounded-full border border-[#751fe7]/20 bg-white transition-all duration-300 hover:bg-[#751fe7] active:scale-90 items-center justify-center"
           >
             <span className="text-3xl leading-none text-[#751fe7] transition-colors duration-300 group-hover:text-white">
               ›
             </span>
+          </button>
+        </div>
+        <div className="flex w-full justify-between px-4 md:hidden">
+          <button
+            onClick={handlePrev}
+            className="rounded-full bg-white px-5 py-2 text-[#751fe7]"
+          >
+            ← Prev
+          </button>
+
+          <button
+            onClick={handleNext}
+            className="rounded-full bg-white px-5 py-2 text-[#751fe7]"
+          >
+            Next →
           </button>
         </div>
       </main>
